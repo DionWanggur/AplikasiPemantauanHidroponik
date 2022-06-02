@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_parameterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:id="@+id/tv_node_loc_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_parameterTitle"
+        android:layout_margin="10dp"
+        android:text="Lokasi: "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <pl.pawelkleczkowski.customgauge.CustomGauge
+        android:id="@+id/gauge"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/tv_node_loc_title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:gaugePointEndColor="#f61403"
+        app:gaugePointSize="250"
+        app:gaugePointStartColor="#1d8de6"
+        app:gaugeStartAngle="135"
+        app:gaugeStrokeCap="ROUND"
+        app:gaugeStrokeColor="#6a6868"
+        app:gaugeStrokeWidth="10dp"
+        app:gaugeSweepAngle="270" />
+
+    <TextView
+        android:id="@+id/tv_parameterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gauge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="80"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_parameterValue"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:text="Peringatan:"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/tv_lastCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_warning"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:text="Pemantauan Terakhir:"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+</RelativeLayout>

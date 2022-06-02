@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="parameters_array">
+        <item>Pilih Parameter</item>
+        <item>pH</item>
+        <item>Suhu Air</item>
+        <item>Suhu Udara</item>
+        <item>TDS</item>
+        <item>Kelembaban</item>
+    </array>
+    <array name="viewMode_array">
+        <item>Pilih Tampilan</item>
+        <item>Grafik</item>
+        <item>Tabel</item>
+    </array>
+</resources>

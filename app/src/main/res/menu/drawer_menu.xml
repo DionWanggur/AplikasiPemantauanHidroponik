@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_monitoring" android:id="@+id/nav_monitoring" android:title="Monitoring"/>
+        <item android:icon="@drawable/ic_statistics" android:id="@+id/nav_statistics" android:title="Statistics"/>
+        <item android:icon="@drawable/ic__history" android:id="@+id/nav_history" android:title="History"/>
+    </group>
+    <item android:icon="@drawable/ic_exit" android:id="@+id/nav_exit" android:title="Exit"/>
+</menu>
